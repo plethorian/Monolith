@@ -4,8 +4,8 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 06/24/2025 22:30:24
-  entityCount: 299
+  time: 06/24/2025 23:15:31
+  entityCount: 323
 maps: []
 grids:
 - 1
@@ -189,6 +189,8 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: BecomesStation
+      id: Spessbite
 - proto: AirAlarm
   entities:
   - uid: 2
@@ -317,6 +319,98 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -4.5,-3.5
+      parent: 1
+- proto: AtmosFixBlockerMarker
+  entities:
+  - uid: 300
+    components:
+    - type: Transform
+      pos: -3.5,-7.5
+      parent: 1
+  - uid: 301
+    components:
+    - type: Transform
+      pos: -3.5,-6.5
+      parent: 1
+  - uid: 302
+    components:
+    - type: Transform
+      pos: -3.5,-5.5
+      parent: 1
+  - uid: 303
+    components:
+    - type: Transform
+      pos: 0.5,-7.5
+      parent: 1
+  - uid: 304
+    components:
+    - type: Transform
+      pos: 1.5,-7.5
+      parent: 1
+  - uid: 305
+    components:
+    - type: Transform
+      pos: 2.5,-7.5
+      parent: 1
+  - uid: 306
+    components:
+    - type: Transform
+      pos: 4.5,-4.5
+      parent: 1
+  - uid: 307
+    components:
+    - type: Transform
+      pos: 4.5,-3.5
+      parent: 1
+  - uid: 308
+    components:
+    - type: Transform
+      pos: -2.5,6.5
+      parent: 1
+  - uid: 309
+    components:
+    - type: Transform
+      pos: -2.5,5.5
+      parent: 1
+  - uid: 310
+    components:
+    - type: Transform
+      pos: -1.5,8.5
+      parent: 1
+  - uid: 311
+    components:
+    - type: Transform
+      pos: 2.5,8.5
+      parent: 1
+  - uid: 312
+    components:
+    - type: Transform
+      pos: 3.5,6.5
+      parent: 1
+  - uid: 313
+    components:
+    - type: Transform
+      pos: 3.5,5.5
+      parent: 1
+  - uid: 314
+    components:
+    - type: Transform
+      pos: -3.5,0.5
+      parent: 1
+  - uid: 315
+    components:
+    - type: Transform
+      pos: 4.5,-6.5
+      parent: 1
+  - uid: 316
+    components:
+    - type: Transform
+      pos: 4.5,-7.5
+      parent: 1
+  - uid: 317
+    components:
+    - type: Transform
+      pos: 4.5,-8.5
       parent: 1
 - proto: ButtonFrameGrey
   entities:
@@ -1417,6 +1511,38 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -1.5,-5.5
+      parent: 1
+- proto: RandomSpawner
+  entities:
+  - uid: 318
+    components:
+    - type: Transform
+      pos: -1.5,-0.5
+      parent: 1
+  - uid: 319
+    components:
+    - type: Transform
+      pos: 1.5,-0.5
+      parent: 1
+  - uid: 320
+    components:
+    - type: Transform
+      pos: 1.5,3.5
+      parent: 1
+  - uid: 321
+    components:
+    - type: Transform
+      pos: -0.5,6.5
+      parent: 1
+  - uid: 322
+    components:
+    - type: Transform
+      pos: -3.5,-3.5
+      parent: 1
+  - uid: 323
+    components:
+    - type: Transform
+      pos: 0.5,-4.5
       parent: 1
 - proto: ReinforcedWindow
   entities:
